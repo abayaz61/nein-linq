@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\..\global.props" />
+
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>..\NeinLinq.snk</AssemblyOriginatorKeyFile>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <SignAssembly>true</SignAssembly>
+    <TargetFrameworks>net451;netstandard1.3</TargetFrameworks>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\NeinLinq\NeinLinq.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="1.0.0" />
+  </ItemGroup>
+
+</Project>

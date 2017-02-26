@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\..\global.props" />
+
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>..\NeinLinq.snk</AssemblyOriginatorKeyFile>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <SignAssembly>true</SignAssembly>
+    <TargetFrameworks>net45;netstandard1.0</TargetFrameworks>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\NeinLinq\NeinLinq.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Interactive.Async.Providers" Version="3.0.0" />
+  </ItemGroup>
+
+</Project>
